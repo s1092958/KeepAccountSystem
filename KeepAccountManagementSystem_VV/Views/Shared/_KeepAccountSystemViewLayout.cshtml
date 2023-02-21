@@ -1,0 +1,28 @@
+﻿@model KeepAccountManagementSystem_VV.ViewModels.KeepAccountViewModel
+
+<div>
+    <h1>
+        View
+    </h1>
+</div>
+
+<table width="100%">
+    <tr>
+        <th>Amount</th>
+        <th>Date</th>
+        <th>Remark</th>
+    </tr>
+
+    @if (Model.index.Count != 0)
+    {
+        @foreach (var item in Model.index)
+        {
+            <tr>
+                <td>@item.Amount</td>
+                <td>@item.Date</td>
+                <td>@item.Remark</td>
+            </tr>
+        }
+    }
+
+</table>

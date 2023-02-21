@@ -1,0 +1,33 @@
+﻿@* @model KeepAccountManagementSystem_VV.Models.KeepAccount *@
+
+@model KeepAccountManagementSystem_VV.Models.KeepAccount
+<div>
+    <h1>
+        Create
+    </h1>
+</div>
+
+<div>
+    @using (Html.BeginForm("Save", "Home", FormMethod.Post))
+    {
+        <text>Amout: </text>
+        <input asp-for="Amount"/>
+        <span style="color:red" asp-validation-for="Amount"></span>
+        <br/>
+        <br/>
+
+        <text>Date: </text>
+        <input asp-for="Date"/>
+        <span style="color:red" asp-validation-for="Date"></span>
+        <br/>
+        <br/>
+
+        <text>Remark: </text>
+        <input asp-for="Remark"/>
+        <span style="color:red" asp-validation-for="Remark"></span>
+        <br/>
+        <br/>
+
+        <button>Submit</button>
+    }
+</div>

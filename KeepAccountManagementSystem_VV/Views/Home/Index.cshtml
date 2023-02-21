@@ -1,0 +1,16 @@
+﻿@model KeepAccountManagementSystem_VV.ViewModels.KeepAccountViewModel
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+<div class="text-center">
+    <h2 class="display-4">Welcome to vv's Keep Account Management System</h2>
+    @* <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p> *@
+</div>
+
+@* Must include Create and View partial in one page. 2 partial views *@
+<partial name="_KeepAccountSystemCreateLayout" model="Model.create"/>
+<br>
+<partial name="_KeepAccountSystemViewLayout" model="Model"/>

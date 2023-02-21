@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\KeepAccountManagementSystem_VV.props" />
+</Project>

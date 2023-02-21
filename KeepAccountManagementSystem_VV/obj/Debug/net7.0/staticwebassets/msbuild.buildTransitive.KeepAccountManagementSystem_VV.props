@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\KeepAccountManagementSystem_VV.props" />
+</Project>
